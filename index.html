@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+
+      <header style="text-align: right;  padding: 15px;">
+        <img src="images/amsterdam-drop.png" style="max-width: 3%; border-right: 1px solid; padding-right: 5px;"><img src="images/logo.svg" style="max-width: 9%; padding-left: 5px;">
+      </header>
+
+      <div class="slides">
+
+        <!-- First Slide -->
+        <section>
+          <h1 style="margin-bottom: 0;">CSS Houdini</h1>
+          <h2 style="text-transform: initial; font-weight: normal;">New Era of CSS</h2>
+          <span class="border"></span>
+          <p class="ht_marg">
+            <small>SPEAKERS <a ><!-- <img src="images/nsukul.jpg" /> -->SAKET KUMAR  </a> & <a ><!-- <img src="images/vidit.jpg" /> -->VIDIT ANJARIA</a></small>
+          </p>
+        </section>
+
+        <!--  Second Slide -->
+        <section>
+          <h2>Dag Iedereen</h2>
+          <p>Welcome to DrupalCon <span style="color: #DD0131;">A</span><span style="color: #F39D8A;">m</span><span style="color: #EE6D25;">s</span><span style="color: #F7B32F;">t</span><span style="color: #F5A862;">e</span><span style="color: #D61C60;">r</span><span style="color: #186A99;">d</span><span style="color: #8EC7E9;">a</span><span style="color: #DEEBF3;">m</span>.</p>
+        </section>
+
+        <!--  Third Slide -->
+        <!-- <section>
+          <h2>What is CSS?</h2>
+        </section> -->
+
+        <!--  Fourth Slide -->
+        <section>
+          <section><h2>What is Houdini?</h2></section>
+          <section><img src="images/escaping.gif"/></section>
+          <section><img src="images/true-escaping.gif"/></section>
+        </section>
+
+        <!--  Fifth Slide -->
+        <section>
+          <h2>What is CSS Houdini?</h2>
+          <ul style="display: block; margin: 0 0 0 4.5em;">
+            <li class="fragment">Browser CSS Engine</li>
+            <li class="fragment">CSS APIs</li>
+            <li class="fragment">Target using JS</li>
+          </ul>
+        </section>
+
+        <!--  Sixth Slide -->
+        <section>
+          <h2>Which API<span style="text-transform: initial;">s</span> are accessible?</h2>
+          <ul style="display: block; margin: 0 0 0 2.3em;">
+            <li class="fragment">Typed OM</li>
+            <li class="fragment">Properties & Vaues API</li>
+            <li class="fragment">Paint API</li>
+            <li class="fragment">Layout API</li>
+            <li class="fragment">Animation API</li>
+            <li class="fragment">Parser API</li>
+            <li class="fragment">Font Metrics API</li>
+          </ul>
+        </section>
+
+        <!--  Seventh Slide -->
+        <section>
+          <section>
+            <h2>How CSS Works?</h2>
+            <img src="images/How-css-works.png"/>
+          </section>
+
+          <section>
+            <h2>Rendering Pipeline</h2>
+            <img src="images/CSS-hooks.png"/>
+          </section>
+        </section>
+
+        <section>
+          <h2>Why CSS Houdini??</h2>
+          <img src="images/js-polyfil.png" style="max-width: 100%;border:0;" class="fragment" />
+        </section>
+
+        <!-- Eighth Slide -->
+        <section>
+          <h2>Challenges!!</h2>
+          <ul style="position: relative;">
+            <li class="fragment">Conic Gradient</li>
+            <li class="fragment">Checkbox & Radio button</li>
+            <li class="fragment">Border Shapes</li>
+            <li class="fragment">Tooltip</li>
+            <li class="fragment" style="list-style: none;"><span style="position: absolute; right: -75px; font-size: 210px; top: -40px;">}</span>
+            <span style="font-size: 45px; position: absolute; right: -250px; top: 70px;">Paint API</span></li>
+            <li class="fragment">Mosaic Layout - Layout API</li>
+            <li class="fragment">Animated Gradient - Custom Properties</li>
+          </ul>
+        </section>
+
+        <!-- Ninth Slide -->
+        <section>
+          <h2>Typed OM</h2>
+          <img src="images/typed-om.png" />
+        </section>
+
+        <!-- Tenth Slide -->
+        <section>
+          <h2>Web workers, Service Workers & Worklets</h2>
+          <p style="color: red;">GIF to be added</p>
+        </section>
+
+        <!-- Elevanth Slide -->
+        <section>
+          <h2>Paint API</h2>
+          <img src="images/Paint-api.png" style="max-width: 100%; border: 0;" />
+
+          <aside class="notes">
+            Paint API works exactly as a canvas where you can draw whatever you want.
+
+            e.g. Tooltip
+            This is the example of tooltip which is published on css-houdini.rocks.
+
+            Here, we are going to add one more thing, that is place ment of the tooltip.
+          </aside>
+        </section>
+
+        <!-- Twelveth Slide -->
+        <section>
+          <h2>Animation API</h2>
+          <img src="images/animation-api.png" style="max-width: 100%; border: 0;"/>
+          <!-- <p style="color: red;">Code Snippet (HTML, CSS, JS)</p> -->
+        </section>
+
+        <!-- Thirteenth Slide -->
+        <section>
+          <h2>Layout API</h2>
+          <img src="images/Layout-API.png" style="max-width: 100%; border: 0;"/>
+        </section>
+
+        <!-- Forteenth Slide -->
+        <section>
+          <section>
+            <h2>Cautions!!!</h2>
+            <ul>
+              <li>This is Experimental</li>
+              <li>chrome://flags/ - #enable-experimental-web-platform-features</li>
+              <li>Must be localhost or https</li>
+              <li>Is Houdinig Ready Yet?</li>
+              <li>Hope this will work</li>
+            </ul>
+          </section>
+
+          <section class="iframe-content" data-background-iframe="https://ishoudinireadyyet.com" data-background-interactive style="width: 100%; height: 100%; max-width: 100%; max-height: calc(100vh - 85px); margin: 0 auto;">
+          </section>
+        </section>
+
+        <!-- Fifteenth Slide -->
+        <section>
+          <h2>Questions?!!</h2>
+        </section>
+
+        <!-- Sixteenth Slide -->
+        <section>
+          <h2>Thank You!!!</h2>
+          <p>Connect with us</p>
+          <p style="display: flex; justify-content: center; align-items: center;"><img src="images/twitter.png" style="border: 0;max-width: 30px;transform: rotateY(-160deg);margin-right: 15px;"/><span style="font-size: 30px;">@saket_kmr</span></p>
+          <p style="display: flex; justify-content: center; align-items: center;"><img src="images/twitter.png" style="border: 0;max-width: 30px;transform: rotateY(-160deg);margin-right: 15px;"/><span style="font-size: 30px;">@vidit_27</span></p>
+        </section>
+      </div>
+    </div>
+
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true }
+        ]
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+Animation API
+
+HTML
+CSS.animationWorklet.addModule('path to js file')
+
+
+JS
+class anima {
+  ....
+}
+
+
+registerAnimator(‘sample-animator’)
+

@@ -1,0 +1,18 @@
+Paint API
+
+HTML
+CSS.paintWorklet.addModule(painter)
+
+
+JS
+class painter {
+  ...
+}
+
+registerPaint('fun', painter)
+
+CSS
+
+div {
+  background: paint(fun);
+}

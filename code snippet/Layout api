@@ -1,0 +1,17 @@
+Paint API
+
+HTML
+CSS.layoutWorklet.addModule('js/layout_script.js');
+
+
+JS
+registerLayout('sample-layout', class {
+
+  static get childInputProperties() {}
+
+  *intrinsicSizes() {}
+  *layout(children, edges, constraintSpace, styles) {}
+}
+
+CSS
+display: layout(sample-lauy);
