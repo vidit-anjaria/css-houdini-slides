@@ -235,9 +235,9 @@ body {
 /*********************************************
  * IMAGES
  *********************************************/
- .reveal section.iframe-content {
+/* .reveal section.iframe-content {
   background: #fff;
-}
+}*/
 
 .reveal section img {
   margin: 15px 0px;
