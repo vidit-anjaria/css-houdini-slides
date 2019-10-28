@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>reveal.js</title>
+    <title>Houdini - New Era Of CSS</title>
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/reveal.css">
@@ -33,7 +33,7 @@
 
         <!-- First Slide -->
         <section>
-          <h1 style="margin-bottom: 0;">CSS Houdini</h1>
+          <h1 style="margin-bottom: 0;">Houdini</h1>
           <h2 style="text-transform: initial; font-weight: normal;">New Era of CSS</h2>
           <span class="border"></span>
           <p class="ht_marg">
@@ -140,15 +140,81 @@
 
         <!-- Thirteenth Slide -->
         <section>
-          <h2>Layout API</h2>
-          <img src="images/Layout-API.png" style="max-width: 100%; border: 0;"/>
+          <section>
+            <h2>Layout API</h2>
+            <ul>
+              <li>Make your own custom display properties</li>
+              <li>Build your own layout spec like  <em>flex</em> or <em>grid</em> </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Layout API</h2>
+            <img src="images/layout.png" style="max-width: 100%; border: 0;"/>
+          </section>
+
+          <section>
+            <h2>Layout API</h2>
+            <img src="images/LayoutChild.png" style="max-width: 100%; border: 0;"/>
+          </section>
+
+          <section>
+            <h2>Layout API</h2>
+            <img src="images/Layout-API.png" style="max-width: 100%; border: 0;"/>
+          </section>
         </section>
 
         <!-- Fourteenth Slide -->
         <section>
-          <h2>Animation API</h2>
-          <img src="images/animation-api.png" style="max-width: 100%; border: 0;"/>
-          <!-- <p style="color: red;">Code Snippet (HTML, CSS, JS)</p> -->
+          <section>
+            <h2>Animation API</h2>
+            <video data-src="animation-api-demo.mp4" type="video/mp4" />
+          </section>
+
+          <!-- <section>
+            <h2>Animation API</h2>
+            <img src="images/animation-api.png" style="max-width: 100%; border: 0;"/>
+          </section> -->
+
+          <section>
+            <pre>
+/* Registering animator */
+registerAnimator('sync-scroller', class SyncScrollerAnimator {
+  static get inputProperties = ['--scroller-type'];
+  static get inputScroll = true;
+  static get outputScroll = true;
+
+  animate(root, children) {
+    var input =
+      children.filter(e => e.styleMap.get("--scroller-type") == "input")[0];
+    var outputs =
+      children.filter(e => e.styleMap.get("--scroller-type") == "output");
+
+    if (!input)
+      return;
+
+    outputs.forEach(elem => {
+      elem.scrollOffsets.top = input.scrollOffsets.top;
+      elem.scrollOffsets.left = input.scrollOffsets.left;
+    });
+  }
+});
+            </pre>
+          </section>
+
+          <section>
+            <pre>
+#main_scroller {
+    animator: sync-scroller;
+    --scroller-type: input;
+  }
+
+  #alt_scroller {
+    animator: sync-scroller;
+    --scroller-type: output;
+  }
+            </pre>
+          </section>
         </section>
 
         <!-- Fifteenth Slide -->
